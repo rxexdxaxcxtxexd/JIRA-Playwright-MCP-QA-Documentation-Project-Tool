@@ -1,0 +1,47 @@
+{
+  "testFileToTicket": {
+    "_comment": "Maps Playwright test files to Jira ticket keys",
+    "_instructions": "Replace BOPS-TBD# placeholders with actual Jira ticket numbers once tickets are created",
+
+    "customer.create.behavior.spec.js": "BOPS-TBD1",
+    "customer.create.e2e.spec.js": "BOPS-TBD1",
+    "customer.edit.behavior.spec.js": "BOPS-TBD2",
+    "customer.search.behavior.spec.js": "BOPS-TBD3",
+    "customer.delete.e2e.spec.js": "BOPS-TBD4",
+    "customer.features.validation.spec.js": "BOPS-TBD5",
+    "customer.error-handling.spec.js": "BOPS-TBD6",
+
+    "commodity.create.behavior.spec.js": "BOPS-TBD7",
+    "commodity.create.e2e.spec.js": "BOPS-TBD7",
+    "commodity.edit.behavior.spec.js": "BOPS-TBD8",
+    "commodity.search.behavior.spec.js": "BOPS-TBD9",
+    "commodity.delete.e2e.spec.js": "BOPS-TBD10",
+    "commodity.features.validation.spec.js": "BOPS-TBD11",
+    "commodity.error-handling.spec.js": "BOPS-TBD12",
+
+    "barge.create.behavior.spec.js": "BOPS-TBD13",
+    "barge.create.e2e.spec.js": "BOPS-TBD13",
+    "barge.edit.behavior.spec.js": "BOPS-TBD14",
+    "barge.search.behavior.spec.js": "BOPS-TBD15",
+    "barge.delete.e2e.spec.js": "BOPS-TBD16",
+    "barge.features.validation.spec.js": "BOPS-TBD17",
+    "barge.error-handling.spec.js": "BOPS-TBD18"
+  },
+
+  "notes": [
+    "This configuration maps test files to their corresponding Jira tickets",
+    "Multiple test files can map to the same ticket (e.g., create.behavior and create.e2e)",
+    "Update ticket keys before running the reporter for actual Jira posting",
+    "Ticket keys follow pattern: BOPS-#### where #### is the ticket number"
+  ],
+
+  "exampleUsage": {
+    "description": "Examples of how to use the Jira reporter script",
+    "commands": [
+      "node jira-test-reporter.js customer --dry-run",
+      "node jira-test-reporter.js commodity",
+      "node jira-test-reporter.js barge --skip-tests",
+      "node jira-test-reporter.js all"
+    ]
+  }
+}

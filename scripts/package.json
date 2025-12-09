@@ -1,0 +1,30 @@
+{
+  "name": "bargeops-admin-test-scripts",
+  "version": "1.0.0",
+  "description": "Automated Playwright test results reporter for Jira",
+  "main": "jira-test-reporter.js",
+  "scripts": {
+    "report": "node jira-test-reporter.js",
+    "report:customer": "node jira-test-reporter.js customer",
+    "report:commodity": "node jira-test-reporter.js commodity",
+    "report:barge": "node jira-test-reporter.js barge",
+    "report:all": "node jira-test-reporter.js all",
+    "report:dry-run": "node jira-test-reporter.js customer --dry-run",
+    "help": "node jira-test-reporter.js --help"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "jira",
+    "automation",
+    "e2e"
+  ],
+  "author": "BargeOps Development Team",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
